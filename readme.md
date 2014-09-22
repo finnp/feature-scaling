@@ -13,6 +13,8 @@ variables. And project them with this formular:
 x' = (x-min(X)) / (max(X) - min(X))
 ```
 
+Values of the objects, that are not parseable as numbers will be ignored.
+
 ## Example
 
 ```js
@@ -20,7 +22,7 @@ var normalize = require('feature-scaling')
 
 var data = [
   {a: 1, b:1},
-  {a: 2, b:1},
+  {a: "2", b:"1", note: "special"},
   {a: 3, b:10}
 ]
 
@@ -29,7 +31,7 @@ var normalized = normalize(data)
 // normalized will be
 
 // [ { a: 0,   b: 0 }, 
-//   { a: 0.5, b: 0 }, 
+//   { a: 0.5, b: 0, note: 'special' }, 
 //   { a: 1,   b: 1 } 
 // ]
 ```
