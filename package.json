@@ -1,6 +1,6 @@
 {
   "name": "feature-scaling",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Scale the values of an array or stream of objects within [0,1]",
   "main": "index.js",
   "bin": {
