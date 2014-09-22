@@ -1,0 +1,31 @@
+{
+  "name": "feature-scaling",
+  "version": "1.0.0",
+  "description": "Scale the values of an array or stream of objects within [0,1]",
+  "main": "index.js",
+  "bin": {
+    "feature-scaling": "./cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/finnp/feature-scaling.git"
+  },
+  "keywords": [
+    "normalization",
+    "data",
+    "processing"
+  ],
+  "author": "Finn Pauls",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/finnp/feature-scaling/issues"
+  },
+  "homepage": "https://github.com/finnp/feature-scaling",
+  "dependencies": {
+    "concat-stream": "^1.4.6",
+    "ldjson-stream": "^1.2.1"
+  }
+}
